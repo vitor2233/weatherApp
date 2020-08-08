@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+import { InputGroup, FormControl, Button } from 'react-bootstrap'
+
 const App = () => {
   const appid = process.env.REACT_APP_WEATHER_KEY;
   const [temp, setTemp] = useState(0);
@@ -37,7 +39,16 @@ const App = () => {
   return (
     <div className="App">
       <div className="weather-search">
-        <p>search</p>
+        <InputGroup>
+          <FormControl
+            placeholder="Procure por cidade"
+            aria-label="Procure por cidade"
+            aria-describedby="basic-addon2"
+          />
+          <InputGroup.Append>
+            <Button variant="outline-secondary">Procurar</Button>
+          </InputGroup.Append>
+        </InputGroup>
       </div>
       <div className="weather-status">
         <div className="weather-name">

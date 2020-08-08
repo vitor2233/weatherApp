@@ -6,6 +6,18 @@
   height: 10vh;
 }
 
+.weather-search > .input-group {
+  width: 50vw;
+  left: 30vw;
+}
+
+@media(max-width: 550px) {
+  .weather-search > .input-group {
+    width: 100vw;
+    left: 0vw;
+  }
+}
+
 .weather-status {
   height: 90vh;
   display: flex;
