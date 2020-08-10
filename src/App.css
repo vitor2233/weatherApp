@@ -4,6 +4,7 @@
 
 .weather-search {
   height: 10vh;
+  margin: 10px 5px 0px 5px;
 }
 
 .weather-search > .input-group {
@@ -13,7 +14,7 @@
 
 @media(max-width: 550px) {
   .weather-search > .input-group {
-    width: 100vw;
+    width: 96vw;
     left: 0vw;
   }
 }
@@ -44,4 +45,17 @@
 
 .weather-minmax > p {
   margin-right: 10px;
+}
+
+.btn-outline-secondary {
+  color: #393e46;
+  border-color: #355c7d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #1e979e;
+}
+
+input.form-control {
+  border-color: #355c7d;
 }
